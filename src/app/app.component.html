@@ -1,0 +1,122 @@
+
+<div id="header">
+  <div  class="col-md-12">
+  <div  class="col-md-2" id="logo" style="float:left">
+    <img src="/assets/logotapas.png" width="60%"  >
+  </div>
+  <div class="col-md-6" id="imagen">
+    <img src="/assets/skylinemadrid1.jpg" width="100%">
+  </div> 
+  <br/><br/>
+  <div  id="buscador" style="text-align: right;">
+      <!-- <nav class="navbar navbar-light bg-light"> -->
+        <!-- Búsqueda Google -->
+    
+     <FORM method="GET" action="http://www.google.com/search">
+     <TABLE bgcolor="#FFFFFF"><tr><td>
+     <A HREF="http://www.google.com/">
+     <IMG SRC="http://www.google.com/logos/Logo_40wht.gif" border="0" height="50%" ALT="Google" align="absmiddle"></A>
+     <INPUT TYPE="text" name="q" size="11" maxlength="255" value="">
+     <INPUT TYPE="hidden" name="hl" value=es>
+     <INPUT class="btn btn-primary" type="submit" name="btnG" VALUE="Búsqueda Google">
+     </td></tr></TABLE>
+     </FORM>
+     
+     <!-- Búsqueda Google -->
+     
+     
+     <!--  <form class="form-inline">
+         <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+         <button class="btn btn-outline-success" type="submit">Buscar</button>
+       </form>-->
+     <!-- </nav> -->
+    </div>
+    <br/><br/>
+  <div class="col-md-4" style="margin-left: 80%" id="botonLogout" *ngIf="isLogin">
+        
+      <a class="btn btn-primary btn-lg " href="#" (click)="onClickLogout()">Logout</a>
+  
+    </div>
+   
+  
+</div>
+<br>
+
+</div>
+
+
+
+
+<!-- ana  -->
+<!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <div class="col-md-4">
+        <a class="btn btn-danger btn-lg btn-block" routerLink="/home">Inicio</a>
+    </div>
+    <div class="col-md-4">
+        <a class="btn btn-danger btn-lg btn-block" routerLink="/login">Iniciar sesion</a>
+    </div>
+    
+    
+ 
+    <div class="col-md-4">
+        <a class="btn btn-danger btn-lg btn-block"  routerLink="/contactos">Contacto</a>
+    </div>
+  </div>
+
+</nav> -->
+
+ <!-- <div class="col-md-4">
+      <a class="btn btn-danger btn-lg btn-block" (click)="loginGoogle()" routerLink="/login">Formulario</a>
+  </div> -->
+
+<!-- elena  -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top ">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto justify-content-end">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home">Conoce los Barrios de Madrid</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/servicios">Rutas de tapas</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/login">Mi cuenta</a>
+      </li>
+
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/contactos">Contacto</a>
+        </li>
+    
+    </ul>
+  
+  </div>
+</nav>
+
+
+<router-outlet></router-outlet>
+
+<br>
+
+<!--<div>
+<iframe width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/1ccb9168-32df-4138-b163-d2705a8e8bd6"></iframe>
+</div>-->
+
+<div class="container" id="footer">
+  <div class="col-md-12">
+    <div id="enlace">
+        <a href="/assets/cookies.pdf" id="enlace">&#169; Politica de Cookies</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<h2>Conoce todas nuestras rutas</h2>
+    
+          <table class="table">
+              <tbody>
+                <!-- ngFor es un bucle para recorrer json-->
+                <tr *ngFor="let blogs of blogObservable | async">
+                  <td><img width="50%" src="{{ blogs.foto }}"></td>
+                  <td>{{ blogs.nombre }}</td>
+                  <td>{{ blogs.descripcion }}</td>
+                  <td><button class="btn btn-primary" [routerLink]="['/rutadetail', blogs._id]">Ver más información</button></td>
+                  
+                </tr>
+              </tbody>
+            </table>
+

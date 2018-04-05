@@ -1,0 +1,26 @@
+
+<div class="container" [hidden]="submitted" style="text-align: center;">
+	<h3>Contáctenos si tiene alguna duda</h3>
+	<form (ngSubmit)="onSubmit()">
+		<div class="form-group">
+			<label for="mail">mail</label>
+			<input type="email" class="form-control" placeholder="name@example.com" [(ngModel)]="contacto.mail" name="mail" required>
+		</div>
+		<div class="form-group">
+			<label for="fecha">fecha</label><br>
+			<input type="date" class="form-control" [(ngModel)]="contacto.fecha" name="fecha" required>
+			<span class="input-group-addon">
+				<span class="glyphicon glyphicon-calendar"></span>
+			</span>	
+		</div>
+		<div class="form-group">
+			<label for="comentarios">comentarios</label>
+			<textarea class="form-control" [(ngModel)]="contacto.comentarios" name="comentarios" rows="3" required></textarea>
+		</div>
+		<button type="submit" class="btn btn-primary">Enviar</button>
+	</form>
+</div>
+<div style="text-align: center;" [hidden]="!submitted">
+	<h4>Tu petición ha sido enviada correctamente</h4>
+	<button class="btn btn-success" (click)="nuevoContacto()">Add</button>
+</div>

@@ -1,0 +1,34 @@
+<div class="container" [hidden]="submitted2" style="text-align: center;">
+<form (ngSubmit)="onSubmit2()">
+		<div class="form-group">
+				<label for="id">ID</label>
+				<input type="id" class="form-control" placeholder="id" [(ngModel)]="ruta.id" name="id"  required>
+			</div>
+		<div class="form-group">
+			<label for="titulo">Titulo</label>
+			<input type="titulo" class="form-control" placeholder="titulo" [(ngModel)]="ruta.titulo" name="titulo" required>
+		</div>
+		<div class="form-group">
+			<label for="fecha">fecha</label><br>
+			<input type="date" class="form-control" [(ngModel)]="ruta.fecha" name="fecha" required>
+			<span class="input-group-addon">
+				<span class="glyphicon glyphicon-calendar"></span>
+			</span>	
+		</div>
+		<div class="form-group">
+			<label for="descripcion">descripcion</label>
+			<textarea class="form-control" [(ngModel)]="ruta.descripcion" name="descripcion" rows="3" required></textarea>
+		</div>
+		<div class="form-group">
+			<label for="foto">Foto</label>
+			<input type="url" placeholder="Pon una url a la foto" class="form-control" [(ngModel)]="ruta.foto" name="foto"  required/>
+		</div>
+		
+		<button type="submit" class="btn btn-primary">Enviar</button>
+	</form>
+</div>
+    <div style="text-align: center;" [hidden]="!submitted2">
+            <h4>Datos enviados correctamente</h4>
+            <button class="btn btn-success" (click)="nuevaRuta()">Add</button>
+        </div>
+

@@ -1,0 +1,17 @@
+<div class="container" style="text-align: center;">
+  <h1>Temas</h1>
+    <ul>
+      
+      <div *ngFor="let blogs of blogObservable | async">
+        <ngb-alert type="info" [dismissible]="false">
+          
+          <a routerLink="/detail/{{blogs.id}}"><h3 >{{ blogs.titulo }},    {{ blogs.fecha |date:"dd/MM/yy"}}</h3>
+            <p>{{ blogs.descripcion }}</p>
+            <img width="50%" height="50%" src="{{ blogs.foto }}"></a>
+          </ngb-alert> 
+      </div>
+    </ul> 
+       
+<p >Si quieres unirte a nuestro grupo y hacerte miembro, pulse en el botón de abajo</p>
+<a class="btn btn-danger btn-lg " routerLink="CTA">CTA</a>
+</div>
