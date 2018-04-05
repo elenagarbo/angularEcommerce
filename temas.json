@@ -1,0 +1,13 @@
+{
+"blogs" : [
+{"_id" : "1", "titulo" : "Alerta por Tsunami", "fecha" : "08/03/2018", "descripcion" : "Se prevee un tsunami para este fin de semana en las costas de España", "foto" : "/assets/imagenes/ola.jpg"}
+],
+"contactos" : [
+{"_id" : "1", "mail" : "adrian@gmail.com", "fecha" : "02/01/2018", "comentario" : "Hola tio me llamo ralph"}
+],
+"rutas" : [
+{"_id" : "1", "foto" : "/assets/imagenes/singluten.jpg", "nombre" : "Ruta sin Gluten", "descripcion" : "La ruta sin Gluten empieza en la calle Cava Baja y termina en la Calle de la Paz.", "categoria": "la latina", "precio":15},
+{"_id" : "2", "foto" : "/assets/imagenes/aguacate.JPG", "nombre" : "Ruta del Aguacate", "descripcion" : "La ruta del Aguacate empieza en la calle Valencia y termina en la Calle Espina.",  "categoria": "la latina", "precio":15},
+{"_id" : "3", "foto" : "/assets/imagenes/gourmet.jpg", "nombre" : "Ruta Gourmet", "descripcion" : "La ruta sin Gluten empieza en la calle Opera y termina en la Calle Pez.",  "categoria": "Huertas", "precio":20}
+]
+}
