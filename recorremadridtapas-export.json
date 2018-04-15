@@ -1,0 +1,58 @@
+{
+  "blogs" : [ {
+    "_id" : "1",
+    "descripcion" : "Se prevee un tsunami para este fin de semana en las costas de Espa�a",
+    "fecha" : "08/03/2018",
+    "foto" : "/assets/imagenes/ola.jpg",
+    "titulo" : "Alerta por Tsunami"
+  } ],
+  "contactos" : [ {
+    "_id" : "1",
+    "comentario" : "Hola tio me llamo ralph",
+    "fecha" : "02/01/2018",
+    "mail" : "adrian@gmail.com"
+  } ],
+  "rutas" : [ {
+    "_id" : "1",
+    "categoria" : "la latina",
+    "descripcion" : "La ruta sin Gluten empieza en la calle Cava Baja y termina en la Calle de la Paz.",
+    "foto" : "/assets/imagenes/singluten.jpg",
+    "nombre" : "Ruta sin Gluten",
+    "precio" : 15
+  }, {
+    "_id" : "2",
+    "categoria" : "la latina",
+    "descripcion" : "La ruta del Aguacate empieza en la calle Valencia y termina en la Calle Espina.",
+    "foto" : "/assets/imagenes/aguacate.JPG",
+    "nombre" : "Ruta del Aguacate",
+    "precio" : 15
+  }, {
+    "_id" : "3",
+    "categoria" : "Huertas",
+    "descripcion" : "La ruta sin Gluten empieza en la calle Opera y termina en la Calle Pez.",
+    "foto" : "/assets/imagenes/gourmet.jpg",
+    "nombre" : "Gourmet",
+    "precio" : 20
+  }, {
+    "_id" : "4",
+    "categoria" : "Huertas",
+    "descripcion" : "La ruta del tomate empieza en la calle Alcalá y termina en la Calle de la Moreria.",
+    "foto" : "/assets/imagenes/tomate1.jpg",
+    "nombre" : "Ruta del Tomate",
+    "precio" : 18
+  }, {
+    "_id" : "5",
+    "categoria" : "Huertas",
+    "descripcion" : "La ruta del pulpo empieza en la calle Castellon y termina en la Calle Valencia.",
+    "foto" : "/assets/imagenes/pulpo.jpg",
+    "nombre" : "Para amantes del pulpo",
+    "precio" : 18
+  }, {
+    "_id" : "6",
+    "categoria" : "la latina",
+    "descripcion" : "La ruta del foie empieza en la calle Carlos V y termina en la Calle María",
+    "foto" : "/assets/imagenes/foie.jpg",
+    "nombre" : "Ruta del Foie",
+    "precio" : 18
+  } ]
+}
